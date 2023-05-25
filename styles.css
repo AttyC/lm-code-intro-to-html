@@ -1,2 +1,146 @@
-/* Your CSS styles here! */
+body {
+  color: #0d1321;
+  font-family: "DM Sans", sans-serif;
+}
 
+main {
+  margin: auto;
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+/* HEADER */
+
+header {
+  background: #e2e3a6;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 40px 60px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+nav ul li:hover,
+nav ul li:focus {
+  background-color: #ffeddf;
+}
+nav ul li a,
+header a {
+  color: #0d1321;
+  font-weight: 600;
+}
+
+/* GLOBAL STYLES */
+
+h1 {
+  background-color: #fafaef;
+  font-size: 2.25rem;
+  height: fit-content;
+  padding: 10px;
+}
+aside,
+section,
+form,
+fieldset,
+image,
+video,
+h1 {
+  border-radius: 10px;
+}
+section {
+  margin: 40px;
+  padding: 30px;
+}
+
+aside {
+  background-color: #ffeddf;
+  font-weight: 600;
+  height: fit-content;
+  margin: 20px;
+  padding: 20px;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+/* Sections */
+
+.welcome {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  background: url(./surgery.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome img {
+  height: max-content;
+}
+/* https://coolors.co/0d1321-ffeddf-e2e3a6-c5d86d-86615c */
+.alert {
+  border: 2px solid #c5d86d;
+  padding: 20px;
+}
+
+.alert-heading {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.ask-doc {
+  background-color: #ffeddf;
+}
+
+.small {
+  font-size: 0.85rem;
+}
+
+/* Form */
+
+fieldset {
+  padding: 30px;
+}
+form div {
+  margin: 10px 0;
+}
+form div label {
+  display: block;
+  width: fit-content;
+}
+fieldset {
+  border: 2px solid #c5d86d;
+}
+.question {
+  font-weight: 600;
+}
+
+form input:not(type=["radio"]) {
+  width: 15rem;
+}
+
+hr {
+  width: 10%;
+  border-top: 1px solid #86615c;
+  margin: 20px 0;
+}
